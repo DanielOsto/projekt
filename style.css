@@ -1,0 +1,151 @@
+/* Ogólne */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8; /* z pierwszego pliku */
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 24px;
+    color: #007b7b;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: #005555;
+}
+
+.auth a {
+    margin-left: 20px;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.auth a:hover {
+    color: #007b7b;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Ogłoszenia */
+.ogloszenie {
+    display: flex;
+    background: #fff; /* można też #f7f7f7 jeśli wolisz */
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+
+.ogloszenie:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #eaeaea;
+}
+
+.ogloszenie img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+.ogloszenie-info {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.ogloszenie-info h2 {
+    margin: 0 0 5px;
+}
+
+.ogloszenie-info h2 a {
+    color: #007b7b;
+    text-decoration: none;
+}
+
+.cena {
+    font-weight: bold;
+    color: #cc9900;
+}
+
+.email {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.kategoria {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* 🔄 Tryb ciemny */
+body.dark {
+    background-color: #111;
+    color: #f1f1f1;
+}
+
+body.dark header {
+    background: #1e1e1e;
+    border-bottom: 1px solid #444;
+    box-shadow: none;
+}
+
+body.dark .logo {
+    color: #00ffcc;
+}
+
+body.dark .auth a {
+    color: #ccc;
+}
+
+body.dark .ogloszenie {
+    background: #222;
+    border: 1px solid #333;
+    box-shadow: none;
+}
+
+body.dark .ogloszenie:hover {
+    background: #2c2c2c;
+}
+
+body.dark .ogloszenie img {
+    border-right: 1px solid #333;
+}
+
+body.dark .ogloszenie-info h2 a {
+    color: #00ffcc;
+}
+
+body.dark .cena {
+    color: #ffcc00;
+}
+
+body.dark .email {
+    color: #aaa;
+}
